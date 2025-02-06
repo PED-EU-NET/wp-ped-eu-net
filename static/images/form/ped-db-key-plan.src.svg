@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.2"
+   viewBox="0 0 805 710"
+   width="100%"
+   id="svg142"
+   sodipodi:docname="ped-db-key-plan.src.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs253" />
+  <sodipodi:namedview
+     id="namedview144"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.2540983"
+     inkscape:cx="310.98041"
+     inkscape:cy="280.67976"
+     inkscape:window-width="2560"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg142" />
+  <title
+     id="title2">PED DB Key Plan</title>
+  <style
+     id="style7">
+		.s0 { opacity: .5;fill: #00a19b;stroke: #00a19b } 
+		.s1 { fill: #00a19b;stroke: #00a19b } 
+		.s2 { fill: #034d46 } 
+		.s3 { fill: none;stroke: #034d46;stroke-width: 2 } 
+		.s4 { fill: #034d46;stroke: #034d46;stroke-width: 2 } 
+		.s5 { fill: #ffffff } 
+		.s6 { fill: none;stroke: #ffffff;stroke-width: 2 } 
+		.s7 { fill: #ffffff;stroke: #ffffff;stroke-width: 2 } 
+		.s8 { fill: #034d46;stroke: #034d46;stroke-width: 3 } 
+		.s9 { fill: none;stroke: #034d46;stroke-width: 3 } 
+	</style>
+  <g
+     id="F-section"
+     inkscape:label="F-section">
+    <g
+       id="F-box"
+       inkscape:label="F-box">
+      <g
+         id="F-bg"
+         inkscape:label="F-bg">
+        <path
+           id="F-rect"
+           class="s0"
+           d="m 432.5,319.5 h 362 c 5.5,0 10,4.5 10,10 v 176 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 v -176 c 0,-5.5 4.5,-10 10,-10 z"
+           inkscape:label="F-rect" />
+        <path
+           id="F-head"
+           class="s1"
+           d="m 432.5,319.5 h 362 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+           inkscape:label="F-head" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:34.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+         x="439.01874"
+         y="356.82294"
+         id="F-heading"
+         inkscape:label="F-heading"><tspan
+           sodipodi:role="line"
+           id="tspan579-3-0-8-9"
+           x="439.01874"
+           y="356.82294"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.6667px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Semi-Bold';fill:#ffffff">SECTION F</tspan></text>
+    </g>
+    <g
+       id="F1"
+       inkscape:label="F1">
+      <path
+         id="F1-box"
+         class="s1"
+         d="m 470.5,383.5 h 310 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -310 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+         inkscape:label="F1-box" />
+      <g
+         id="F1-bullet"
+         inkscape:label="F1-bullet">
+        <path
+           id="path96"
+           class="s4"
+           d="m 442.5,401.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z" />
+        <path
+           id="path98"
+           class="s3"
+           d="m 442.5,396.5 c 6.6,0 12,5.4 12,12 0,6.6 -5.4,12 -12,12 -6.6,0 -12,-5.4 -12,-12 0,-6.6 5.4,-12 12,-12 z" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:21.19px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#034d46;fill-opacity:1;stroke-width:0.533861"
+         x="473.51801"
+         y="413.55246"
+         id="F1-text"
+         transform="scale(0.99328331,1.0067621)"
+         inkscape:label="F1-text"><tspan
+           sodipodi:role="line"
+           id="tspan927-8-9-2-1-9-6-3-9"
+           x="473.51801"
+           y="413.55246"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.19px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#034d46;fill-opacity:1;stroke-width:0.533861">Technological Innovation</tspan></text>
+    </g>
+    <g
+       id="F2"
+       inkscape:label="F2">
+      <path
+         id="F2-box"
+         class="s1"
+         d="m 470.5,447.5 h 310 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -310 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+         inkscape:label="F2-box" />
+      <g
+         id="F2-bullet"
+         inkscape:label="F2-bullet"
+         transform="translate(0,-1)">
+        <path
+           id="path103"
+           class="s3"
+           d="m 442.5,461.5 c 6.6,0 12,5.4 12,12 0,6.6 -5.4,12 -12,12 -6.6,0 -12,-5.4 -12,-12 0,-6.6 5.4,-12 12,-12 z" />
+        <path
+           id="path105"
+           class="s4"
+           d="m 442.5,466.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:21.19px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#034d46;fill-opacity:1;stroke-width:0.533861"
+         x="473.40421"
+         y="477.12259"
+         id="F2-text"
+         transform="scale(0.99328331,1.0067621)"
+         inkscape:label="F2-text"><tspan
+           sodipodi:role="line"
+           id="tspan927-8-9-2-1-9-6-3-2"
+           x="473.40421"
+           y="477.12259"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.19px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#034d46;fill-opacity:1;stroke-width:0.533861">Non-technological Innovation</tspan></text>
+    </g>
+  </g>
+  <g
+     id="E-section"
+     inkscape:label="E-section">
+    <g
+       id="E-box"
+       inkscape:label="E-box">
+      <g
+         id="E-bg"
+         inkscape:label="E-bg">
+        <path
+           id="E-rect"
+           class="s0"
+           d="m 432.5,160.5 h 362 c 5.5,0 10,4.5 10,10 v 112 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 v -112 c 0,-5.5 4.5,-10 10,-10 z"
+           inkscape:label="E-rect" />
+        <path
+           id="E-head"
+           class="s1"
+           d="m 432.5,160.5 h 362 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+           inkscape:label="E-head" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:34.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+         x="439.01874"
+         y="197.82292"
+         id="E-heading"
+         inkscape:label="E-heading"><tspan
+           sodipodi:role="line"
+           id="tspan579-3-0-8"
+           x="439.01874"
+           y="197.82292"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.6667px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Semi-Bold';fill:#ffffff">SECTION E</tspan></text>
+    </g>
+    <g
+       id="E1"
+       inkscape:label="E1">
+      <g
+         id="E-bullet"
+         inkscape:label="E-bullet">
+        <path
+           id="path64"
+           class="s3"
+           d="m 442.5,237.5 c 6.6,0 12,5.4 12,12 0,6.6 -5.4,12 -12,12 -6.6,0 -12,-5.4 -12,-12 0,-6.6 5.4,-12 12,-12 z" />
+        <path
+           id="path66"
+           class="s4"
+           d="m 442.5,242.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z" />
+      </g>
+      <path
+         id="E1-box"
+         class="s1"
+         d="m 470.5,224.5 h 310 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -310 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+         inkscape:label="E1-box" />
+      <text
+         xml:space="preserve"
+         style="font-size:21.19px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#034d46;fill-opacity:1;stroke-width:0.533861"
+         x="473.40421"
+         y="255.62042"
+         id="E1-text"
+         transform="scale(0.99328331,1.0067621)"
+         inkscape:label="E1-text"><tspan
+           sodipodi:role="line"
+           id="tspan927-8-9-2-1-9-6-3"
+           x="473.40421"
+           y="255.62042"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.19px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#034d46;fill-opacity:1;stroke-width:0.533861">National Policies/Strategies</tspan></text>
+    </g>
+  </g>
+  <g
+     id="D-section"
+     inkscape:label="D-section">
+    <g
+       id="D-box"
+       inkscape:label="D-box">
+      <g
+         id="D-bg"
+         inkscape:label="D-bg">
+        <path
+           id="D-rect"
+           class="s0"
+           d="m 432.5,0.5 h 362 c 5.5,0 10,4.5 10,10 v 112 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 v -112 c 0,-5.5 4.5,-10 10,-10 z"
+           inkscape:label="D-rect" />
+        <path
+           id="D-head"
+           class="s1"
+           d="m 432.5,0.5 h 362 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+           inkscape:label="D-head" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:34.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+         x="439.01874"
+         y="37.822929"
+         id="D-heading"
+         inkscape:label="D-heading"><tspan
+           sodipodi:role="line"
+           id="tspan579-3-0"
+           x="439.01874"
+           y="37.822929"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.6667px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Semi-Bold';fill:#ffffff">SECTION D</tspan></text>
+    </g>
+    <g
+       id="D1"
+       inkscape:label="D1">
+      <g
+         id="D-bullet"
+         inkscape:label="D-bullet">
+        <path
+           id="Ellisse 1"
+           class="s3"
+           d="m 442.5,77.5 c 6.6,0 12,5.4 12,12 0,6.6 -5.4,12 -12,12 -6.6,0 -12,-5.4 -12,-12 0,-6.6 5.4,-12 12,-12 z" />
+        <path
+           id="Ellisse 1 copia"
+           class="s4"
+           d="m 442.5,82.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z" />
+      </g>
+      <path
+         id="D1-box"
+         class="s1"
+         d="m 470.5,64.5 h 310 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -310 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+         inkscape:label="D1-box" />
+      <text
+         xml:space="preserve"
+         style="font-size:21.19px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#034d46;fill-opacity:1;stroke-width:0.533861"
+         x="473.49731"
+         y="96.695084"
+         id="D1-text"
+         transform="scale(0.99328331,1.0067621)"
+         inkscape:label="D1-text"><tspan
+           sodipodi:role="line"
+           id="tspan927-8-9-2-1-9-6"
+           x="473.49731"
+           y="96.695084"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.19px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#034d46;fill-opacity:1;stroke-width:0.533861">General Projects/Initiatives</tspan></text>
+    </g>
+  </g>
+  <metadata
+     id="metadata429">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>PED DB Key Plan</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="A1-D1-link"
+     inkscape:label="A1-D1-link">
+    <path
+       id="A1-D1-link-line"
+       class="s8"
+       d="M 367.30775,89.5 H 430.5"
+       inkscape:label="A1-D1-link-line" />
+    <path
+       id="A1-D1-link-pin"
+       class="s4"
+       d="m 367.4872,82.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z"
+       style="fill:#034d46;stroke:#034d46;stroke-width:2"
+       inkscape:label="A1-D1-link-pin" />
+  </g>
+  <g
+     id="A1-E1-link"
+     inkscape:label="A1-E1-link">
+    <path
+       id="A1-E1-link-line"
+       class="s9"
+       d="m 430.5,249.5 h -17 v -119 h -45.33559"
+       inkscape:label="A1-E1-link-line"
+       sodipodi:nodetypes="cccc" />
+    <path
+       id="A1-E1-link-pin"
+       class="s4"
+       d="m 367.4872,123.05053 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z"
+       style="fill:#034d46;stroke:#034d46;stroke-width:2"
+       inkscape:label="A1-E1-link-pin" />
+  </g>
+  <g
+     id="A2-F1-link"
+     inkscape:label="A2-F1-link">
+    <path
+       id="A2-F1-link-line"
+       class="s9"
+       d="M 430.3777,408.15468 H 399.5 V 193.84509 h -30.94131"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="A2-F1-link-line" />
+    <path
+       id="A2-F1-link-pin"
+       class="s4"
+       d="m 367.4872,186.72672 c 3.89999,0 7,3.1 7,7 0,3.9 -3.10001,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z"
+       style="fill:#034d46;stroke:#034d46;stroke-width:2"
+       inkscape:label="A2-F1-link-pin" />
+  </g>
+  <g
+     id="A3-F2-link"
+     inkscape:label="A3-F1-link">
+    <path
+       id="A3-F2-link-line"
+       class="s9"
+       d="M 430.11871,473.04678 H 389.5 V 262.5 h -21.68297"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="A3-F1-link-line" />
+    <path
+       id="A3-F1-link-pin"
+       class="s4"
+       d="m 367.4872,255.25958 c 3.89999,0 7,3.1 7,7 0,3.9 -3.10001,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z"
+       style="fill:#034d46;stroke:#034d46;stroke-width:2"
+       inkscape:label="A3-F1-link-pin" />
+  </g>
+  <g
+     id="C-section"
+     inkscape:label="C-section">
+    <g
+       id="C-box"
+       inkscape:label="C-box">
+      <g
+         id="C-bg"
+         inkscape:label="C-bg">
+        <path
+           id="C-rect"
+           class="s0"
+           d="m 10.5,576.5 h 362 c 5.5,0 10,4.5 10,10 v 113 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 v -113 c 0,-5.5 4.5,-10 10,-10 z"
+           inkscape:label="C-rect" />
+        <path
+           id="C-head"
+           class="s1"
+           d="m 10.5,574.5 h 362 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+           inkscape:label="C-head" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:34.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+         x="16.063904"
+         y="611.82294"
+         id="C-heading"
+         inkscape:label="C-heading"><tspan
+           sodipodi:role="line"
+           id="tspan579-3"
+           x="16.063904"
+           y="611.82294"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.6667px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Semi-Bold';fill:#ffffff">SECTION C</tspan></text>
+    </g>
+    <g
+       id="C1"
+       inkscape:label="C1">
+      <path
+         id="C1-box"
+         class="s1"
+         d="m 48.5,642.5 h 310 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -310 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+         inkscape:label="C1-box" />
+      <g
+         id="C1-bullet"
+         inkscape:label="C1-bullet"
+         transform="translate(0,-1)">
+        <path
+           id="Ellisse 1 copia 2"
+           class="s3"
+           d="m 20.5,656.5 c 6.6,0 12,5.4 12,12 0,6.6 -5.4,12 -12,12 -6.6,0 -12,-5.4 -12,-12 0,-6.6 5.4,-12 12,-12 z" />
+        <path
+           id="path15"
+           class="s4"
+           d="m 20.5,661.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:21.19px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#034d46;fill-opacity:1;stroke-width:0.533861"
+         x="49.07814"
+         y="670.97839"
+         id="C1-text"
+         transform="scale(0.99328331,1.0067621)"
+         inkscape:label="C1-text"><tspan
+           sodipodi:role="line"
+           id="tspan927-8-9-2-1-9"
+           x="49.07814"
+           y="670.97839"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.19px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#034d46;fill-opacity:1;stroke-width:0.533861">C1. Drivers and Barriers</tspan></text>
+    </g>
+  </g>
+  <g
+     id="B-section"
+     inkscape:label="B-section">
+    <g
+       id="B-box"
+       inkscape:label="B-box">
+      <g
+         id="B-bg"
+         inkscape:label="B-bg">
+        <path
+           id="B-rect"
+           class="s0"
+           d="m 10.5,337.5 h 362 c 5.5,0 10,4.5 10,10 v 186 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 v -186 c 0,-5.5 4.5,-10 10,-10 z"
+           inkscape:label="B-rect" />
+        <path
+           id="B-head"
+           class="s1"
+           d="m 10.5,335.5 h 362 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+           inkscape:label="B-head" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:34.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+         x="16.063904"
+         y="372.82294"
+         id="B-heading"
+         inkscape:label="B-heading"><tspan
+           sodipodi:role="line"
+           id="tspan579"
+           x="16.063904"
+           y="372.82294"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.6667px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Semi-Bold';fill:#ffffff">SECTION B</tspan></text>
+    </g>
+    <g
+       id="B1"
+       inkscape:label="B1">
+      <path
+         id="B1-box"
+         class="s1"
+         d="m 48.5,403.5 h 310 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -310 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+         inkscape:label="B1-box" />
+      <g
+         id="B1-bullet"
+         inkscape:label="B1-bullet"
+         transform="translate(0,-1)">
+        <path
+           id="path27"
+           class="s3"
+           d="m 20.5,417.5 c 6.6,0 12,5.4 12,12 0,6.6 -5.4,12 -12,12 -6.6,0 -12,-5.4 -12,-12 0,-6.6 5.4,-12 12,-12 z" />
+        <path
+           id="path29"
+           class="s4"
+           d="m 20.5,422.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:21.19px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#034d46;fill-opacity:1;stroke-width:0.533861"
+         x="49.036755"
+         y="433.58368"
+         id="B1-text"
+         transform="scale(0.99328331,1.0067621)"
+         inkscape:label="B1-text"><tspan
+           sodipodi:role="line"
+           id="tspan927-8-9-2"
+           x="49.036755"
+           y="433.58368"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.19px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#034d46;fill-opacity:1;stroke-width:0.533861">B1. PED Case Studies in Detail</tspan></text>
+    </g>
+    <g
+       id="B2"
+       inkscape:label="B2">
+      <path
+         id="B2-box"
+         class="s1"
+         d="m 48.5,470.5 h 310 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -310 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+         inkscape:label="B2-box" />
+      <g
+         id="B2-bullet"
+         inkscape:label="B2-bullet">
+        <path
+           id="Ellisse 1 copia 3"
+           class="s3"
+           d="m 20.5,483.5 c 6.6,0 12,5.4 12,12 0,6.6 -5.4,12 -12,12 -6.6,0 -12,-5.4 -12,-12 0,-6.6 5.4,-12 12,-12 z" />
+        <path
+           id="path35"
+           class="s4"
+           d="m 20.5,488.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:21.19px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#034d46;fill-opacity:1;stroke-width:0.533861"
+         x="49.036755"
+         y="500.13367"
+         id="B2-text"
+         transform="scale(0.99328331,1.0067621)"
+         inkscape:label="B2-text"><tspan
+           sodipodi:role="line"
+           id="tspan927-8-9-2-1"
+           x="49.036755"
+           y="500.13367"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.19px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#034d46;fill-opacity:1;stroke-width:0.533861">B2. PED Labs in Detail</tspan></text>
+    </g>
+  </g>
+  <g
+     id="A-section"
+     inkscape:label="A-section">
+    <g
+       id="A-box"
+       inkscape:label="A-box">
+      <g
+         id="A-bg"
+         inkscape:label="A-bg">
+        <path
+           id="A-rect"
+           class="s0"
+           d="m 10.5,0.5 h 362 c 5.5,0 10,4.5 10,10 v 284 c 0,5.5 -4.5,10 -10,10 h -362 c -5.5,0 -10,-4.5 -10,-10 V 10.5 C 0.5,5 5,0.5 10.5,0.5 Z"
+           inkscape:label="A-rect" />
+        <path
+           id="A-head"
+           class="s1"
+           d="m 10.5,0.5 h 362 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 H 10.5 C 5,50.5 0.5,46 0.5,40.5 v -30 C 0.5,5 5,0.5 10.5,0.5 Z"
+           inkscape:label="A-head" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:34.6667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial"
+         x="16.063904"
+         y="37.822937"
+         id="A-heading"
+         inkscape:label="A-heading"><tspan
+           sodipodi:role="line"
+           id="tspan579-4"
+           x="16.063904"
+           y="37.822937"
+           style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.6667px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Semi-Bold';fill:#ffffff">SECTION A</tspan></text>
+    </g>
+    <g
+       id="A3"
+       inkscape:label="A3">
+      <path
+         id="A3-box"
+         class="s1"
+         d="m 48.5,237.5 h 310 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -310 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+         inkscape:label="A3-box" />
+      <g
+         id="A3-bullet"
+         inkscape:label="A3-bullet">
+        <path
+           id="path136"
+           class="s3"
+           d="m 20.5,250.5 c 6.6,0 12,5.4 12,12 0,6.6 -5.4,12 -12,12 -6.6,0 -12,-5.4 -12,-12 0,-6.6 5.4,-12 12,-12 z" />
+        <path
+           id="path138"
+           class="s4"
+           d="m 20.5,255.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:21.19px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#034d46;fill-opacity:1;stroke-width:0.533861"
+         x="49.191956"
+         y="268.53311"
+         id="A3-text"
+         transform="scale(0.99328331,1.0067621)"
+         inkscape:label="A3-text"><tspan
+           sodipodi:role="line"
+           id="tspan927-8-9"
+           x="49.191956"
+           y="268.53311"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.19px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#034d46;fill-opacity:1;stroke-width:0.533861">A3. Non-technological Aspects</tspan></text>
+    </g>
+    <g
+       id="A2"
+       inkscape:label="A2">
+      <path
+         id="A2-box"
+         class="s1"
+         d="m 48.5,170.5 h 310 c 5.5,0 10,4.5 10,10 v 30 c 0,5.5 -4.5,10 -10,10 h -310 c -5.5,0 -10,-4.5 -10,-10 v -30 c 0,-5.5 4.5,-10 10,-10 z"
+         inkscape:label="A2-box" />
+      <g
+         id="A2-bullet"
+         inkscape:label="A2-bullet"
+         transform="translate(0,-1)">
+        <path
+           id="path121"
+           class="s3"
+           d="m 20.5,184.5 c 6.6,0 12,5.4 12,12 0,6.6 -5.4,12 -12,12 -6.6,0 -12,-5.4 -12,-12 0,-6.6 5.4,-12 12,-12 z" />
+        <path
+           id="path123"
+           class="s4"
+           d="m 20.5,189.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:21.19px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#034d46;fill-opacity:1;stroke-width:0.533861"
+         x="49.191956"
+         y="201.98312"
+         id="A2-text"
+         transform="scale(0.99328331,1.0067621)"
+         inkscape:label="A2-text"><tspan
+           sodipodi:role="line"
+           id="tspan927-8"
+           x="49.191956"
+           y="201.98312"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.19px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#034d46;fill-opacity:1;stroke-width:0.533861">A2. Technological Aspects</tspan></text>
+    </g>
+    <g
+       id="A1"
+       inkscape:label="A1">
+      <path
+         id="A1-box"
+         class="s1"
+         d="m 48.5,64.5 h 310 c 5.5,0 10,4.5 10,10 v 68 c 0,5.5 -4.5,10 -10,10 h -310 c -5.5,0 -10,-4.5 -10,-10 v -68 c 0,-5.5 4.5,-10 10,-10 z"
+         inkscape:label="A1-box" />
+      <g
+         id="A1-bullet"
+         inkscape:label="A1-bullet"
+         transform="translate(0,1)">
+        <path
+           id="path128"
+           class="s3"
+           d="m 20.5,95.5 c 6.6,0 12,5.4 12,12 0,6.6 -5.4,12 -12,12 -6.6,0 -12,-5.4 -12,-12 0,-6.6 5.4,-12 12,-12 z" />
+        <path
+           id="path130"
+           class="s4"
+           d="m 20.5,100.5 c 3.9,0 7,3.1 7,7 0,3.9 -3.1,7 -7,7 -3.9,0 -7,-3.1 -7,-7 0,-3.9 3.1,-7 7,-7 z" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:21.19px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#034d46;fill-opacity:1;stroke-width:0.533861"
+         x="49.191956"
+         y="115.73301"
+         id="A1-text"
+         transform="scale(0.99328331,1.0067621)"
+         inkscape:label="A1-text"><tspan
+           sodipodi:role="line"
+           id="tspan927"
+           x="49.191956"
+           y="115.73301"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.19px;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#034d46;fill-opacity:1;stroke-width:0.533861">A1. Global Characteristics</tspan></text>
+    </g>
+  </g>
+</svg>

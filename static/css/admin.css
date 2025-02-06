@@ -1,0 +1,76 @@
+#pedeu-db-editor-settings,
+#pedeu-db-editor-email-list {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    margin-top: 40px;
+    max-width: 1600px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+#pedeu-db-editor-settings h3,
+#pedeu-db-editor-email-list h3 {
+    font-weight: 800;
+}
+
+#pedeu-db-editor-settings .send-email-btn {
+    line-height: 28px !important;
+}
+
+#pedeu-db-editor-settings .invite-form-cell {
+    display: flex;
+    flex-direction: column;
+    height: 8em;
+}
+
+#pedeu-db-editor-settings .invite-form-cell .invite-link {
+    flex-grow: 1;
+}
+
+#pedeu-db-editor-settings .send-email-form {
+    margin: 1em 0;
+    display: flex;
+    gap: 0.5em;
+}
+
+#pedeu-db-editor-settings .send-email-form .email-field {
+    flex-grow: 1;
+    max-width: 35em;
+}
+
+#pedeu-db-editor-email-list thead td {
+    font-weight: bold;
+}
+
+#pedeu-db-editor-email-list td.ped-eu-td-shrink {
+    width: 4em;
+}
+
+#pedeu-db-editor-email-list td.ped-eu-td-right {
+    text-align: right;
+}
+
+#pedeu-db-editor-email-list td.ped-eu-td-center {
+    text-align: center;
+}
+
+.ped-eu-warning {
+    text-align: center;
+    padding: 2em;
+    margin: 1em;
+    border: 1px solid red;
+    background: #efb8b8;
+}
+
+.column-pedeu-actions {
+    width: 14%;
+    text-align: center;
+}
+.fixed .column-date {
+    width: 26%;
+}
+
+td.column-pedeu-actions {
+    vertical-align: middle;
+}
