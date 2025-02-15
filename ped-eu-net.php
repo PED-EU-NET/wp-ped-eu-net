@@ -5,8 +5,8 @@
  * Version:           1.2.0
  * Requires at least: 6.1
  * Requires PHP:      7.2
- * Author:            Boutik, Marek Suchánek
- * License:           proprietary
+ * Author:            PET-EU-NET Team
+ * License:           MIT
  */
 
 // If this file is called directly, abort.
@@ -30,11 +30,10 @@ const PED_EU_FORM_CASE_STUDY_GF_ID = 1;
 const PED_EU_SHORTCODE_CS_MAP = "pedeu_case_studies_map";
 const PED_EU_SHORTCODE_CS_TABLE = "pedeu_case_studies_table";
 const PED_EU_SHORTCODE_PR_TABLE = "pedeu_projects_table";
-const PED_EU_SHORTCODE_OVERVIEW = "pedeu_overview";
-const PED_EU_SHORTCODE_VISUALIZATIONS = "pedeu_visualizations";
 const PED_EU_SHORTCODE_FORM_DIAGRAM = "pedeu_form_diagram";
 // Unfortunately role name is hard to change
 const PED_EU_DB_EDITOR_ROLE = "pedeue_editor";
+const PED_EU_GF_DRAFT_DAYS = 90;
 
 const PED_EU_DB_DEV_MODE = false;
 
@@ -45,5 +44,3 @@ include_once PED_EU_ROOT_PATH . "includes/admin.php";
 include_once PED_EU_ROOT_PATH . "includes/forms.php";
 include_once PED_EU_ROOT_PATH . "includes/case-studies.php";
 include_once PED_EU_ROOT_PATH . "includes/projects.php";
-include_once PED_EU_ROOT_PATH . "includes/visualizations.php";
-include_once PED_EU_ROOT_PATH . "includes/api/api.php";
