@@ -1,0 +1,24 @@
+name: Package
+
+on:
+  push:
+
+jobs:
+  package:
+    name: ZIP Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Create package
+        run:
+          ./bin/package.sh
+
+      - name: Upload ZIP package
+        uses: actions/upload-artifact@v4
+        with:
+          name: ped-eu-net
+          path: ./dist/ped-eu-net
+          compression-level: '0'
+          retention-days: 14
