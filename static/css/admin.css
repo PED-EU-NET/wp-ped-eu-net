@@ -1,5 +1,4 @@
-#pedeu-db-editor-settings,
-#pedeu-db-editor-email-list {
+.pedeu-db-editor-section {
 	padding: 10px 20px;
 	background-color: #fff;
 	border: 1px solid #ccc;
@@ -9,8 +8,7 @@
 	box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 }
 
-#pedeu-db-editor-settings h3,
-#pedeu-db-editor-email-list h3 {
+.pedeu-db-editor-section h3 {
 	font-weight: 800;
 }
 
@@ -39,19 +37,23 @@
 	max-width: 35em;
 }
 
-#pedeu-db-editor-email-list thead td {
+.pedeu-db-editor-section thead td {
 	font-weight: bold;
 }
 
-#pedeu-db-editor-email-list td.ped-eu-td-shrink {
+.pedeu-db-editor-section td.ped-eu-td-shrink {
 	width: 4em;
 }
 
-#pedeu-db-editor-email-list td.ped-eu-td-right {
+.pedeu-db-editor-section td.ped-eu-td-actions {
+	width: 12em;
+}
+
+.pedeu-db-editor-section td.ped-eu-td-right {
 	text-align: right;
 }
 
-#pedeu-db-editor-email-list td.ped-eu-td-center {
+.pedeu-db-editor-section td.ped-eu-td-center {
 	text-align: center;
 }
 

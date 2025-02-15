@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Improve handling of map coordinates
 - Add API and visualizations
+- Support GF submission draft management in DB Editor admin view
 
 
 ## 1.2.0

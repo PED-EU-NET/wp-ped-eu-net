@@ -232,3 +232,155 @@ function pedeu_make_invite_link($type, $code)
     }
     return false;
 }
+
+
+/**
+ * Extend form draft expiration.
+ *
+ * @param $entry_uuid
+ * @return void
+ */
+function pedeu_extend_form_draft($entry_uuid): void
+{
+    global $wpdb;
+    // Update date_created
+    $wpdb->update(
+        "wp_gf_draft_submissions",
+        array("date_created" => current_time("mysql")),
+        array("uuid" => $entry_uuid)
+    );
+}
+
+function pedeu_delete_form_draft($entry_uuid): void
+{
+    global $wpdb;
+
+    // Delete files
+    $draft = $wpdb->get_row("SELECT * FROM wp_gf_draft_submissions WHERE uuid = '$entry_uuid'");
+    $submission = json_decode($draft->submission, true);
+    $files = $submission["files"];
+    $form_id = $submission["partial_entry"]["form_id"];
+    $upload_path = GFFormsModel::get_upload_path($form_id) . "/tmp/";
+    foreach ($files as $file) {
+        foreach ($file as $item) {
+            $file_path = $upload_path . $item["temp_filename"];
+            if (file_exists($file_path)) {
+                unlink($file_path);
+            }
+        }
+    }
+    // Delete draft
+    $wpdb->delete(
+        "wp_gf_draft_submissions",
+        array("uuid" => $entry_uuid)
+    );
+}
+
+
+/**
+ * Prepare form draft for user.
+ *
+ * @param string $email
+ * @param int $post_id
+ * @param string $invite_link
+ */
+function pedeu_prepare_form_draft($email, $post_id, $invite_link): string
+{
+    global $wpdb;
+    $draft_uuid = pedeu_get_uuid();
+
+    $entry_id = get_post_meta($post_id, "entry_id", true);
+    $entry = GFAPI::get_entry($entry_id);
+    $form_id = $entry["form_id"];
+    $form = GFAPI::get_form($form_id);
+
+    $unique_id = substr(pedeu_get_uuid(), 0, 13);
+    $files = array();
+    $values = array();
+    $partial_entry = array(
+        "id" => null,
+        "post_id"  => null,
+        "date_created"  => null,
+        "date_updated"  => null,
+        "form_id"  => $form_id,
+        "ip" => "127.0.0.1",
+        "source_url" => $invite_link,
+        "user_agent" => "PED-EU-NET",
+        "created_by" => null,
+        "currency" => "USD",
+    );
+
+    foreach ($entry as $key => $value) {
+        // if form field is fileupload
+        if ($form["fields"][$key] && $form["fields"][$key]["type"] === "fileupload") {
+            $result = array();
+            $links = json_decode($entry[$key]);
+            foreach ($links as $index => $link) {
+                $filename = basename($link);
+                $ext = pathinfo($filename, PATHINFO_EXTENSION);
+                $file_item = array(
+                    "temp_filename" => $unique_id . "_input_" . $key . "_" . pedeu_generate_random_string(20) . "_" . $index . "." . $ext,
+                    "uploaded_filename" => $filename,
+                );
+                $upload_path = GFFormsModel::get_upload_path($form_id) . "/tmp/" . $file_item["temp_filename"];
+                file_put_contents($upload_path, file_get_contents($link));
+                $result[] = $file_item;
+            }
+            $files["input_" . $key] = $result;
+            $entry[$key] = "";
+            $values[$key] = "";
+        }
+
+        if (preg_match("/^[0-9]+\.[0-9]+$/", $key)) {
+            $parent_key = explode(".", $key)[0];
+            if (!isset($values[$parent_key])) {
+                $values[$parent_key] = array();
+            }
+            $values[$parent_key][$key] = $value;
+            $entry[$key] = $value;
+        } elseif (preg_match("/^[0-9]+$/", $key)) {
+            $values[$key] = $value;
+            $entry[$key] = $value;
+        }
+    }
+
+    $submission = array(
+        "submitted_values" => $values,
+        "partial_entry" => $partial_entry,
+        "field_values" => "",
+        "page_number" => 1,
+        "files" => $files,
+        "gform_unique_id" => $unique_id,
+    );
+
+    $wpdb->insert(
+        $wpdb->prefix . "gf_draft_submissions",
+        array(
+            "uuid" => $draft_uuid,
+            "email" => $email,
+            "form_id" => $form_id,
+            "date_created" => current_time("mysql"),
+            "source_url" => $invite_link,
+            "ip" => "127.0.0.1",
+            "submission" => json_encode($submission),
+        )
+    );
+
+    return $draft_uuid;
+}
+
+
+add_filter('gform_incomplete_submissions_expiration_days', 'pedeu_change_incomplete_submissions_expiration_days');
+function pedeu_change_incomplete_submissions_expiration_days($expiration_days) {
+    $expiration_days = PED_EU_GF_DRAFT_DAYS;
+    return $expiration_days;
+}
+
+function pedeu_draft_remaining_days($creation_date) {
+    $expiration_days = PED_EU_GF_DRAFT_DAYS;
+    $creation_date = strtotime($creation_date);
+    $current_date = strtotime(current_time("mysql"));
+    $diff = $current_date - $creation_date;
+    $days = floor($diff / (60 * 60 * 24));
+    return max($expiration_days - $days, 0);
+}
