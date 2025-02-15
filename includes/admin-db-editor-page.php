@@ -100,12 +100,8 @@ $entry_types = array(
                 <input type="hidden" name="code" value="<?= $next_code ?>">
                 <input type="hidden" name="type" value="case-study">
                 <input type="hidden" name="ped_action" value="send">
-                <input type="email" name="email" value=""
-                       class="email-field"
-                       placeholder="Email Address"
-                       required>
-                <input type="submit" name="submit" value="Send Invite"
-                       class="button button-primary button-small send-email-btn">
+                <input type="email" name="email" value="" class="email-field" placeholder="Email Address" required>
+                <input type="submit" name="submit" value="Send Invite" class="button button-primary button-small send-email-btn">
             </form>
         </div>
         <div class="ped-send-email ped-send-email-project">
@@ -118,12 +114,8 @@ $entry_types = array(
                 <input type="hidden" name="code" value="<?= $next_code ?>">
                 <input type="hidden" name="type" value="project">
                 <input type="hidden" name="ped_action" value="send">
-                <input type="email" name="email" value=""
-                       class="email-field"
-                       placeholder="Email Address"
-                       required>
-                <input type="submit" name="submit" value="Send Invite"
-                       class="button button-primary button-small send-email-btn">
+                <input type="email" name="email" value="" class="email-field" placeholder="Email Address" required>
+                <input type="submit" name="submit" value="Send Invite" class="button button-primary button-small send-email-btn">
             </form>
         </div>
     </div>
@@ -169,15 +161,11 @@ $entry_types = array(
                 </td>
                 <td>
                     <form method="POST" action="">
-                        <input type="hidden"
-                               name="index"
-                               value="<?= $index ?>">
-                        <button type="submit" name="ped_action" value="delete"
-                                class="button button-secondary button-small">
+                        <input type="hidden" name="index" value="<?= $index ?>">
+                        <button type="submit" name="ped_action" value="delete" class="button button-secondary button-small">
                             Delete
                         </button>
-                        <button type="submit" name="ped_action" value="toggle"
-                                class="button button-primary button-small">
+                        <button type="submit" name="ped_action" value="toggle" class="button button-primary button-small">
                             <?= $entry["active"] ? "Deactivate" : "Activate" ?>
                         </button>
                     </form>

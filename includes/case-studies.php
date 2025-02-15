@@ -209,10 +209,10 @@ function pedeu_case_studies_map(): string
     $output .= "
         <div id='ped-eu-map'></div>
         <div id='ped-eu-map-legend'>
-    		<span><img src='{$img_folder}ped-lab.svg' alt='PED Lab pin'>PED Lab</span>
-    		<span><img src='{$img_folder}ped-case-study.svg' alt='PED Case Study pin'>PED Case Study</span>
-    		<span><img src='{$img_folder}ped-relevant.svg' alt='PED Relevant Case Study pin'>PED Relevant Case Study</span>
-    		<span><img src='{$img_folder}ped-combined.svg' alt='Combined PED pin'>Both PED Lab / PED Relevant Case Study</span>
+            <span><img src='{$img_folder}ped-lab.svg' alt='PED Lab pin'>PED Lab</span>
+            <span><img src='{$img_folder}ped-case-study.svg' alt='PED Case Study pin'>PED Case Study</span>
+            <span><img src='{$img_folder}ped-relevant.svg' alt='PED Relevant Case Study pin'>PED Relevant Case Study</span>
+            <span><img src='{$img_folder}ped-combined.svg' alt='Combined PED pin'>Both PED Lab / PED Relevant Case Study</span>
         </div>";
 
     $query_params = array_filter(array(

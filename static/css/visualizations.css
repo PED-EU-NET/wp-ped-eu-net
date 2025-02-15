@@ -1,136 +1,136 @@
 #pedeu-visualizations .loader,
 #pedeu-overview .loader {
-    margin: 10em auto;
-    width: 100px;
-    aspect-ratio: 1;
-    --c: no-repeat linear-gradient(#00A19B 0 0);
-    background:
-            var(--c) 0%   100%,
-            var(--c) 50%  100%,
-            var(--c) 100% 100%;
-    animation: pedeu-loader-animation 1s infinite linear;
+	margin: 10em auto;
+	width: 100px;
+	aspect-ratio: 1;
+	--c: no-repeat linear-gradient(#00A19B 0 0);
+	background:
+			var(--c) 0%   100%,
+			var(--c) 50%  100%,
+			var(--c) 100% 100%;
+	animation: pedeu-loader-animation 1s infinite linear;
 }
 @keyframes pedeu-loader-animation {
-    0%  {background-size: 20% 100%,20% 100%,20% 100%}
-    20% {background-size: 20% 60% ,20% 100%,20% 100%}
-    40% {background-size: 20% 80% ,20% 60% ,20% 100%}
-    60% {background-size: 20% 100%,20% 80% ,20% 60% }
-    80% {background-size: 20% 100%,20% 100%,20% 80% }
-    100%{background-size: 20% 100%,20% 100%,20% 100%}
+	0%  {background-size: 20% 100%,20% 100%,20% 100%}
+	20% {background-size: 20% 60% ,20% 100%,20% 100%}
+	40% {background-size: 20% 80% ,20% 60% ,20% 100%}
+	60% {background-size: 20% 100%,20% 80% ,20% 60% }
+	80% {background-size: 20% 100%,20% 100%,20% 80% }
+	100%{background-size: 20% 100%,20% 100%,20% 100%}
 }
 
 #pedeu-visualization-overview {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .chart-wrap.card-100 {
-    width: 100%;
-    min-width: 300px;
-    display: inline-block;
-    text-align: center;
+	width: 100%;
+	min-width: 300px;
+	display: inline-block;
+	text-align: center;
 }
 
 .chart-wrap.card-50 {
-    width: 50%;
-    min-width: 300px;
-    display: inline-block;
+	width: 50%;
+	min-width: 300px;
+	display: inline-block;
 }
 
 .chart-wrap > canvas {
-    border-radius: 10px;
-    background: #EEE;
-    padding: 1em;
-    margin: 1em;
+	border-radius: 10px;
+	background: #EEE;
+	padding: 1em;
+	margin: 1em;
 }
 
 .number-wrap.card-33 {
-    width: 33%;
-    display: inline-block;
+	width: 33%;
+	display: inline-block;
 }
 .number-wrap.card-34 {
-    width: 34%;
-    display: inline-block;
+	width: 34%;
+	display: inline-block;
 }
 
 .number-wrap > div {
-    border-radius: 10px;
-    background: #EEE;
-    padding: 2em;
-    margin: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	border-radius: 10px;
+	background: #EEE;
+	padding: 2em;
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .number-wrap > div > div.counter-number {
-    font-size: 400%;
-    font-weight: bold;
-    color: #00A19B;
+	font-size: 400%;
+	font-weight: bold;
+	color: #00A19B;
 }
 .number-wrap > div > div.counter-text {
-    font-size: 120%;
-    font-weight: bold;
-    color: #666;
+	font-size: 120%;
+	font-weight: bold;
+	color: #666;
 }
 
 #pedeu-case-studies-selector {
-    display:flex;
-    gap: 1em;
-    margin: 0.3em 0;
+	display:flex;
+	gap: 1em;
+	margin: 0.3em 0;
 }
 
 #pedeu-visualizations button {
-    background: #00A19B;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    cursor: pointer;
+	background: #00A19B;
+	color: white;
+	border: none;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 #pedeu-visualizations button[disabled] {
-    background: #CCC;
-    color: #666;
-    cursor: not-allowed;
+	background: #CCC;
+	color: #666;
+	cursor: not-allowed;
 }
 
 #pedeu-selected-case-studies-wrap {
-    padding: 1em;
-    background: #EEE;
-    border-radius: 5px;
-    margin: 1em 0;
+	padding: 1em;
+	background: #EEE;
+	border-radius: 5px;
+	margin: 1em 0;
 }
 #pedeu-selected-case-studies-info {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
 }
 #pedeu-selected-case-studies-info > div.text {
-    display: inline-block;
-    flex-grow: 1;
+	display: inline-block;
+	flex-grow: 1;
 }
 
 #pedeu-selected-case-studies > div {
-    width: 100%;
-    margin: 0.5em 0;
-    padding: 0.5em;
-    border-radius: 5px;
-    background: #CCC;
-    display: flex;
-    align-items: center;
+	width: 100%;
+	margin: 0.5em 0;
+	padding: 0.5em;
+	border-radius: 5px;
+	background: #CCC;
+	display: flex;
+	align-items: center;
 }
 #pedeu-selected-case-studies > div > span {
-    display: inline-block;
-    flex-grow: 1;
+	display: inline-block;
+	flex-grow: 1;
 }
 
 #pedeu-selected-case-studies.collapsed {
-    display: none;
+	display: none;
 }
 #pedeu-visualization-chart canvas#visualization {
-    margin: 1em 0;
-    padding: 1em;
+	margin: 1em 0;
+	padding: 1em;
 }
