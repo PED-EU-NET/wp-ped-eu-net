@@ -497,6 +497,13 @@ function pedeu_render_form_table_data_cell($form_field, $form_entry, $unit, $con
             return "<td class='pedeu-not-specified'></td>";
         }
         $value = pedeu_replace_links($value);
+
+        if (is_numeric($value) && str_contains(strtolower($form_field->label), "latitude")) {
+            return "<td data-latitude='$value'>$value</td>";
+        }
+        if (is_numeric($value) && str_contains(strtolower($form_field->label), "longitude")) {
+            return "<td data-longitude='$value'>$value</td>";
+        }
         if ($unit) {
             return "<td data-unit='$unit'>$value</td>";
         }
