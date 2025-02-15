@@ -1,42 +1,42 @@
 .marker-cluster-small {
-    background-color: #2D5676;
-    border: 2px solid white;
+	background-color: #2D5676;
+	border: 2px solid white;
 }
 
 .marker-cluster-medium {
-    background-color: #3b6f9d;
-    border: 2px solid white;
+	background-color: #3b6f9d;
+	border: 2px solid white;
 }
 .marker-cluster-medium div {
-    font-size: 11px;
+	font-size: 11px;
 }
 
 .marker-cluster-large {
-    background-color: #4082b0;
-    border: 2px solid white;
+	background-color: #4082b0;
+	border: 2px solid white;
 }
 .marker-cluster-large div {
-    font-size: 10px;
+	font-size: 10px;
 }
 
 .marker-cluster {
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .marker-cluster div {
-    width: 24px;
-    height: 24px;
+	width: 24px;
+	height: 24px;
 
-    text-align: center;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	text-align: center;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .marker-cluster span {
-    line-height: 30px;
-    color: white;
-    font-weight: bold;
+	line-height: 30px;
+	color: white;
+	font-weight: bold;
 }
