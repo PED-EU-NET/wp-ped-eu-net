@@ -1,0 +1,27 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  package:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Create ZIP package
+        run:
+          ./bin/package.sh
+
+      - name: Check ZIP package
+        run:
+          ls -l ./dist/ped-eu-net.zip
+
+      - name: Upload release assets
+        uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./dist/ped-eu-net.zip

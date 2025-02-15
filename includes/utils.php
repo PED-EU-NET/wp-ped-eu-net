@@ -845,3 +845,30 @@ function pedeu_streq(string $string1, string $string2): bool
 {
     return strcasecmp(trim($string1), trim($string2)) == 0;
 }
+
+
+/**
+ * Get a UUID
+ *
+ * @param string $s separator
+ * @return string
+ */
+function pedeu_get_uuid($s = ''): string
+{
+    if (function_exists('openssl_random_pseudo_bytes')) {
+        $data = openssl_random_pseudo_bytes(16);
+        $data[6] = chr(ord($data[6]) & 0x0f | 0x40);
+        $data[8] = chr(ord($data[8]) & 0x3f | 0x80);
+
+        return vsprintf("%s%s{$s}%s{$s}%s{$s}%s{$s}%s%s%s", str_split(bin2hex($data), 4));
+    } else {
+        return sprintf(
+            "%04x%04x{$s}%04x{$s}%04x{$s}%04x{$s}%04x%04x%04x",
+            mt_rand(0, 0xffff), mt_rand(0, 0xffff),
+            mt_rand(0, 0xffff),
+            mt_rand(0, 0x0fff) | 0x4000,
+            mt_rand(0, 0x3fff) | 0x8000,
+            mt_rand(0, 0xffff), mt_rand(0, 0xffff), mt_rand(0, 0xffff)
+        );
+    }
+}

@@ -1,12 +1,14 @@
 <?php
 /**
  * Plugin Name:       PED-EU-NET
+ * Plugin URI:        https://github.com/PED-EU-NET/wp-ped-eu-net
  * Description:       Functionality specific for PEDEU.net website and PED Database.
- * Version:           1.2.0
+ * Version:           1.3.0
  * Requires at least: 6.1
  * Requires PHP:      7.2
- * Author:            Boutik, Marek Suchánek
- * License:           proprietary
+ * Author:            PED-EU-NET Team
+ * Author URI:        https://pedeu.net
+ * License:           MIT
  */
 
 // If this file is called directly, abort.
@@ -15,7 +17,7 @@ if (!defined("WPINC")) {
 }
 
 const PED_EU_WP_OPTION_EMAILS = "pedeue_invite_emails";
-const PED_EU_VERSION = "1.2.0";
+const PED_EU_VERSION = "1.3.0";
 define("PED_EU_ROOT_PATH", plugin_dir_path(__FILE__));
 define("PED_EU_ROOT_URL", plugin_dir_url(__FILE__));
 
@@ -35,6 +37,7 @@ const PED_EU_SHORTCODE_VISUALIZATIONS = "pedeu_visualizations";
 const PED_EU_SHORTCODE_FORM_DIAGRAM = "pedeu_form_diagram";
 // Unfortunately role name is hard to change
 const PED_EU_DB_EDITOR_ROLE = "pedeue_editor";
+const PED_EU_GF_DRAFT_DAYS = 90;
 
 const PED_EU_DB_DEV_MODE = false;
 
