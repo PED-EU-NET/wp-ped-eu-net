@@ -554,12 +554,15 @@ function pedeu_render_form_table_data_cell($form_field, $form_entry, $unit, $con
     } else if ($type == "multiselect") {
         $value = json_decode($form_entry[$key]);
         $items = array();
-        foreach ($form_field->choices as $choice) {
-            $item_value = $choice['value'];
-            $item_text = $choice['text'];
 
-            if (in_array(strval($item_value), $value)) {
-                $items[] = $item_text;
+        if ($value != null && is_array($value)) {
+            foreach ($form_field->choices as $choice) {
+                $item_value = $choice['value'];
+                $item_text = $choice['text'];
+
+                if (in_array(strval($item_value), $value)) {
+                    $items[] = $item_text;
+                }
             }
         }
 
