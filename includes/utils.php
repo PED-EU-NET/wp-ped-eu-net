@@ -1,6 +1,21 @@
 <?php
 
 /**
+ * Get safely element from array
+ *
+ * @param array $array
+ * @param string $key
+ * @param mixed $default
+ * @return mixed
+ */
+function pedeu_get_array_value($array, $key, $default = null) {
+    if (is_array($array) && array_key_exists($key, $array)) {
+        return $array[$key];
+    }
+    return $default;
+}
+
+/**
  * Get label of GForms field
  *
  * @param array|int $form form or its id
@@ -147,7 +162,7 @@ function pedeu_normalize_invite_entry($entry): array
  */
 function pedeu_get_case_study_details($id, $entry): array
 {
-    $project_ids = $entry["833"];
+    $project_ids = pedeu_get_array_value($entry, "833", "[]");
     $project_ids = trim($project_ids, '*');
     $project_ids = str_replace("[", "", $project_ids);
     $project_ids = str_replace("]", "", $project_ids);
@@ -156,18 +171,18 @@ function pedeu_get_case_study_details($id, $entry): array
 
     return array(
         "id" => $id,
-        "name" => $entry["3"],
-        "is_ped_case_study" => $entry["7.1"] != "",
-        "is_ped_relevant_case_study" => $entry["293.1"] != "",
-        "is_ped_lab" => $entry["9.1"] != "",
-        "phase" => $entry["11"],
+        "name" => pedeu_get_array_value($entry, "3", "Unnamed case study"),
+        "is_ped_case_study" => pedeu_get_array_value($entry, "7.1", "") != "",
+        "is_ped_relevant_case_study" => pedeu_get_array_value($entry, "293.1", "") != "",
+        "is_ped_lab" => pedeu_get_array_value($entry, "9.1", "") != "",
+        "phase" => pedeu_get_array_value($entry, "11", "no-phase"),
         "project_ids" => $project_ids,
-        "title" => $entry["3"],
-        "def1" => $entry["def1"],
-        "def2" => $entry["def2"],
-        "proj_phase" => $entry["proj_phase"],
-        "long" => $entry["20"],
-        "lat" => $entry["21"],
+        "title" => pedeu_get_array_value($entry, "3", "Unnamed case study"),
+        "def1" => pedeu_get_array_value($entry, "def1"),
+        "def2" => pedeu_get_array_value($entry, "def2"),
+        "proj_phase" => pedeu_get_array_value($entry, "proj_phase"),
+        "long" => pedeu_get_array_value($entry, "20", 0),
+        "lat" => pedeu_get_array_value($entry, "21", 0),
     );
 }
 
@@ -182,10 +197,10 @@ function pedeu_get_project_details($id, $entry): array
 {
     return array(
         "id" => $id,
-        "title" => $entry["4"],
-        "code" => $entry["3"],
-        "start_date" => pedeu_read_date($entry["8"]),
-        "end_date" => pedeu_read_date($entry["7"]),
+        "title" => pedeu_get_array_value($entry, "4", "Unnamed project"),
+        "code" => pedeu_get_array_value($entry,"3", ""),
+        "start_date" => pedeu_read_date(pedeu_get_array_value($entry, "8", 0)),
+        "end_date" => pedeu_read_date(pedeu_get_array_value($entry, "7", 0)),
     );
 }
 
@@ -554,12 +569,15 @@ function pedeu_render_form_table_data_cell($form_field, $form_entry, $unit, $con
     } else if ($type == "multiselect") {
         $value = json_decode($form_entry[$key]);
         $items = array();
-        foreach ($form_field->choices as $choice) {
-            $item_value = $choice['value'];
-            $item_text = $choice['text'];
 
-            if (in_array(strval($item_value), $value)) {
-                $items[] = $item_text;
+        if ($value != null && is_array($value)) {
+            foreach ($form_field->choices as $choice) {
+                $item_value = $choice['value'];
+                $item_text = $choice['text'];
+
+                if (in_array(strval($item_value), $value)) {
+                    $items[] = $item_text;
+                }
             }
         }
 

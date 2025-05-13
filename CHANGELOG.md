@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 
+## 1.3.1
+
+- Fix issues with undefined array key
+- Fix in_array warning
+
 ## 1.3.0
 
 - Improve handling of map coordinates
