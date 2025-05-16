@@ -84,7 +84,7 @@ add_action("init", "pedeu_redirect_new_post_to_form");
 function pedeu_admin_head()
 {
     $user = wp_get_current_user();
-    if (in_array(PED_EU_DB_EDITOR_ROLE, (array)$user->roles)) {
+    if (pedeu_in_array(PED_EU_DB_EDITOR_ROLE, (array)$user->roles)) {
         echo "<style>#toplevel_page_gf_edit_forms{display: none;}</style>";
     }
 }

@@ -50,7 +50,7 @@ function pedeu_case_studies_table(): string
             "case_study" => $id,
         ));
         $this_link = add_query_arg($query_params, get_the_permalink());
-        $comp_class = in_array($id, $compare_ids) ? "compared" : "";
+        $comp_class = pedeu_in_array($id, $compare_ids) ? "compared" : "";
 
         $project_titles = array();
         foreach ($details["project_ids"] as $project_id) {
@@ -71,7 +71,7 @@ function pedeu_case_studies_table(): string
         if (isset($_GET["case_study"])) {
             $compare_params = array("case_study" => $case_study_id);
 
-            if (in_array($id, $compare_ids)) {
+            if (pedeu_in_array($id, $compare_ids)) {
                 $compare_ids_new = array_filter($compare_ids, function ($x) use ($id) { return $x != $id; });
                 $compare_params["compare"] = implode(".", $compare_ids_new);
                 $compare_link = add_query_arg($compare_params, $this_link);
