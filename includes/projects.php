@@ -130,9 +130,9 @@ function pedeu_project_single($id, $context): string
             }
 
             if ($cond['logicType'] == 'all') {
-                $truth_value = in_array(false, $truth_values, true) === false;
+                $truth_value = pedeu_in_array(false, $truth_values, true) === false;
             } else {
-                $truth_value = in_array(true, $truth_values, true);
+                $truth_value = pedeu_in_array(true, $truth_values, true);
             }
 
             if (($cond['actionType'] == 'show' && !$truth_value) || ($cond['actionType'] == 'hide' && $truth_value)) {

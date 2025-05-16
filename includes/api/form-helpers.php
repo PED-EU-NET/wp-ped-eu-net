@@ -75,7 +75,12 @@ function pedeu_api_form_field_to_data($form_entry, $form_field, $data_type, $con
         $value = $form_entry[$key];
         $choices = array();
         foreach ($form_field->choices as $choice) {
-            $choices[$choice->value] = $choice->text;
+            $v = pedeu_get_array_value($choice, "value", null);
+            $t = pedeu_get_array_value($choice, "text", null);
+            if ($v == null || $t == null) {
+                continue;
+            }
+            $choices[$v] = $t;
         }
         if ($data_type == "boolean") {
             return strtolower($value) == "yes";
@@ -96,6 +101,9 @@ function pedeu_api_form_field_to_data($form_entry, $form_field, $data_type, $con
         $value = json_decode($form_entry[$key]);
 
         $items = array();
+        if ($value == null) {
+            return $items;
+        }
         foreach ($value as $item_id) {
             if (array_key_exists($item_id, $entities)) {
                 $items[] = $entities[$item_id];
@@ -120,7 +128,7 @@ function pedeu_api_form_field_to_data($form_entry, $form_field, $data_type, $con
             $item_value = $choice['value'];
             $item_text = $choice['text'];
 
-            if (in_array(strval($item_value), $value)) {
+            if (pedeu_in_array(strval($item_value), $value)) {
                 $items[] = $item_text;
             }
         }
@@ -234,9 +242,10 @@ function pedeu_api_form_field_to_meta($field, $key, $context) {
                 "title" => $project["title"],
             );
         }
-    } else if ($data_type != "boolean" && in_array($form_field["type"], array("multiselect", "select", "radio", "checkbox", "list"))) {
+    } else if ($data_type != "boolean" && pedeu_in_array($form_field["type"], array("multiselect", "select", "radio", "checkbox", "list"))) {
         $result["choices"] = array();
-        foreach ($form_field["choices"] as $choice) {
+        $form_choices = pedeu_get_array_value($form_field, "choices", array());
+        foreach ($form_choices as $choice) {
             $result["choices"][] = $choice["text"];
         }
     }
@@ -294,25 +303,27 @@ function pedeu_api_form_to_meta($form_id) {
 
     $fields = array();
     foreach ($sections as $section) {
-        if ($section["id"] == null || count($section["fields"]) == 0) {
+        $section_id = pedeu_get_array_value($section, "id", null);
+        $section_fields = pedeu_get_array_value($section, "fields", array());
+        if ($section_id == null || count($section_fields) == 0) {
             continue;
         }
-        if (count($section["fields"]) == 1 && $section["fields"][0]["id"] == $section["id"]) {
-            $fields[] = pedeu_api_form_field_to_meta($section["fields"][0], $section["id"], $context);
+        if (count($section_fields) == 1 && pedeu_get_array_value($section_fields[0], "id") == $section_id) {
+            $fields[] = pedeu_api_form_field_to_meta($section_fields[0], $section_id, $context);
         } else {
             $subfields = array();
 
             $index = 0;
 
-            foreach ($section["fields"] as $field) {
+            foreach ($section_fields as $field) {
                 $index += 1;
-                $subfields[] = pedeu_api_form_field_to_meta($field, $section["id"] . "." . $index, $context);
+                $subfields[] = pedeu_api_form_field_to_meta($field, $section_id . "." . $index, $context);
             }
 
             $fields[] = array(
                 "fieldId" => null,
-                "key" => $section["id"],
-                "label" => $section["label"],
+                "key" => $section_id,
+                "label" => pedeu_get_array_value($section, "label", ""),
                 "fieldType" => "section",
                 "dataType" => "object",
                 "subfields" => $subfields,
@@ -327,8 +338,8 @@ function pedeu_api_form_to_meta($form_id) {
 
     return array(
         "formId" => $form_id,
-        "formName" => $form["title"],
-        "formLabel" => $form["label"],
+        "formName" => pedeu_get_array_value($form, "title", ""),
+        "formLabel" => pedeu_get_array_value($form, "label", ""),
         "fields" => $fields,
         "fieldKeys" => $fieldKeys,
     );

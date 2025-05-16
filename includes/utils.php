@@ -15,6 +15,23 @@ function pedeu_get_array_value($array, $key, $default = null) {
     return $default;
 }
 
+
+/**
+ * Check if value is in array
+ *
+ * @param mixed $value
+ * @param array $array
+ * @param bool $strict
+ * @return bool
+ */
+function pedeu_in_array($value, $array, $strict = false): bool
+{
+    if (is_array($array)) {
+        return in_array($value, $array, $strict);
+    }
+    return false;
+}
+
 /**
  * Get label of GForms field
  *
@@ -267,7 +284,7 @@ function pedeu_count_form_meta($form_fields, $form_entry, $context)
                 'empty' => 0,
                 'is_empty' => true,
             );
-        } else {
+        } else if ($current_section != '') {
             $metadata[$current_section]['fields'] += 1;
             if (pedeu_form_field_empty($form_field, $form_entry, $context)) {
                 $metadata[$current_section]['empty'] += 1;
@@ -282,6 +299,7 @@ function pedeu_count_form_meta($form_fields, $form_entry, $context)
             }
         }
     }
+
     return $metadata;
 }
 
@@ -312,6 +330,9 @@ function pedeu_form_field_empty($form_field, $form_entry, $context): bool {
         $value = json_decode($form_entry[$key]);
 
         $items = array();
+        if ($value == null || !is_array($value)) {
+            return true;
+        }
         foreach ($value as $item_id) {
             if (array_key_exists($item_id, $entities)) {
                 $items[] = $entities[$item_id];
@@ -326,7 +347,7 @@ function pedeu_form_field_empty($form_field, $form_entry, $context): bool {
             $item_value = $choice['value'];
             $item_text = $choice['text'];
 
-            if (in_array(strval($item_value), $value)) {
+            if (pedeu_in_array(strval($item_value), $value)) {
                 $items[] = $item_text;
             }
         }
@@ -434,9 +455,9 @@ function pedeu_render_form_table_row($form_field, $form_entry, $compared_entries
         }
 
         if ($cond["logicType"] == "all") {
-            $truth_value = in_array(false, $truth_values, true) === false;
+            $truth_value = pedeu_in_array(false, $truth_values, true) === false;
         } else {
-            $truth_value = in_array(true, $truth_values, true);
+            $truth_value = pedeu_in_array(true, $truth_values, true);
         }
 
         if (($cond["actionType"] == "show" && !$truth_value) || ($cond["actionType"] == "hide" && $truth_value)) {
@@ -518,6 +539,9 @@ function pedeu_render_form_table_data_cell($form_field, $form_entry, $unit, $con
         return "<td>$value</td>";
     } else if ($type == "list") {
         $value = unserialize($form_entry[$key]);
+        if ($value == null || !is_array($value)) {
+            return "<td class='pedeu-not-specified'></td>";
+        }
         $output = "<td><ul>";
         foreach ($value as $key => $item) {
             $item = pedeu_replace_links($item);
@@ -530,7 +554,12 @@ function pedeu_render_form_table_data_cell($form_field, $form_entry, $unit, $con
         $value = $form_entry[$key];
         $choices = array();
         foreach ($form_field->choices as $choice) {
-            $choices[$choice->value] = $choice->text;
+            $v = pedeu_get_array_value($choice, 'value', null);
+            $t = pedeu_get_array_value($choice, 'text', null);
+            if ($v == null || $t == null) {
+                continue;
+            }
+            $choices[$v] = $t;
         }
         if ($value == '') {
             return "<td class='pedeu-not-specified'></td>";
@@ -547,6 +576,9 @@ function pedeu_render_form_table_data_cell($form_field, $form_entry, $unit, $con
         $value = json_decode($form_entry[$key]);
 
         $items = array();
+        if ($value == null || !is_array($value)) {
+            return "<td class='pedeu-not-specified'></td>";
+        }
         foreach ($value as $item_id) {
             if (array_key_exists($item_id, $entities)) {
                 $items[] = $entities[$item_id];
@@ -575,7 +607,7 @@ function pedeu_render_form_table_data_cell($form_field, $form_entry, $unit, $con
                 $item_value = $choice['value'];
                 $item_text = $choice['text'];
 
-                if (in_array(strval($item_value), $value)) {
+                if (pedeu_in_array(strval($item_value), $value)) {
                     $items[] = $item_text;
                 }
             }
@@ -645,7 +677,7 @@ function pedeu_render_form_table_data_cell($form_field, $form_entry, $unit, $con
             $ext = strtolower(pathinfo($link, PATHINFO_EXTENSION));
             $sep = $index === array_key_last($links) ? '' : ', ';
             $output .= "<li><a href='$link' target='_blank' data-url-shorten='$link'>$link</a><span class='pedeu-item-sep'>$sep</span>";
-            if (in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'bmp'])) {
+            if (pedeu_in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'bmp'])) {
                 $output .= "<br><a href='$link' target='_blank'><img src='$link' alt='Image $n'></a>";
             }
             $output .= "</li>";
@@ -674,8 +706,8 @@ function pedeu_get_case_study_filters(): array
     $valid_types = ["case-study", "lab", "relevant-case-study"];
 
     return array(
-        "phase" => isset($_GET["phase"]) && in_array($_GET["phase"], $valid_phases) ? $_GET["phase"] : null,
-        "ped_type" => isset($_GET["ped_type"]) && in_array($_GET["ped_type"], $valid_types) ? $_GET["ped_type"] : null,
+        "phase" => isset($_GET["phase"]) && pedeu_in_array($_GET["phase"], $valid_phases) ? $_GET["phase"] : null,
+        "ped_type" => isset($_GET["ped_type"]) && pedeu_in_array($_GET["ped_type"], $valid_types) ? $_GET["ped_type"] : null,
         "project" => isset($_GET["phase"]) ? $_GET["project"] : null,
     );
 }
