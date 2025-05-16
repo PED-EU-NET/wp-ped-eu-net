@@ -111,7 +111,7 @@ foreach ($email_list as $value) {
 }
 $existing_codes = array_unique($existing_codes);
 $next_code = pedeu_generate_random_string();
-while (in_array($next_code, $existing_codes)) {
+while (pedeu_in_array($next_code, $existing_codes)) {
     $next_code = pedeu_generate_random_string();
 }
 $entry_types = array(

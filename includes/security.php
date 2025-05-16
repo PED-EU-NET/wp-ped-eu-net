@@ -28,7 +28,7 @@ function pedeu_form_access_filter(string $content): string
     $pid = get_the_ID();
 
     // if not protected page, no filtering
-    if (!in_array($pid, $protected_pages)) {
+    if (!pedeu_in_array($pid, $protected_pages)) {
         return $content;
     }
 
@@ -51,7 +51,7 @@ function pedeu_form_access_filter(string $content): string
         }
     }
     $access_code = isset($_GET["access_code"]) ? esc_attr($_GET["access_code"]) : "";
-    if ($access_code == "" || !in_array($access_code, $active_codes)) {
+    if ($access_code == "" || !pedeu_in_array($access_code, $active_codes)) {
         return "<div class='pedeu-form-access-denied'>You need access code to view this content</div>";
     }
 
