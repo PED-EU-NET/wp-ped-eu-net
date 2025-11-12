@@ -204,7 +204,6 @@ async function makeMapCases(data, canvasId) {
     }
   });
   const maxCount = Math.max(...Object.values(countryData));
-  console.log(maxCount)
 
   // Create a Geo Chart
   const ctx = document.getElementById(canvasId).getContext('2d');

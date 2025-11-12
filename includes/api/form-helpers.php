@@ -244,7 +244,7 @@ function pedeu_api_form_field_to_meta($field, $key, $context) {
         }
     } else if ($data_type != "boolean" && pedeu_in_array($form_field["type"], array("multiselect", "select", "radio", "checkbox", "list"))) {
         $result["choices"] = array();
-        $form_choices = pedeu_get_array_value($form_field, "choices", array());
+        $form_choices = $form_field["choices"] ?? array();
         foreach ($form_choices as $choice) {
             $result["choices"][] = $choice["text"];
         }
