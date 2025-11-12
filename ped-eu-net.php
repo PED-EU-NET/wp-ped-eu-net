@@ -3,7 +3,7 @@
  * Plugin Name:       PED-EU-NET
  * Plugin URI:        https://github.com/PED-EU-NET/wp-ped-eu-net
  * Description:       Functionality specific for PEDEU.net website and PED Database.
- * Version:           1.3.2
+ * Version:           1.3.3
  * Requires at least: 6.1
  * Requires PHP:      7.3
  * Author:            PED-EU-NET Team
